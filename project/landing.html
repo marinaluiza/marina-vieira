@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,50 +5,49 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="js/json.js"></script>
-	<script src="js/copyToClipboard.js"></script>
-	<script src="js/shortUrl.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript"></script>
+	<script src="js/json.js" type="text/javascript"></script>
+	<script src="js/copyToClipboard.js" type="text/javascript"></script>
+	<script src="js/shortUrl.js" type="text/javascript"></script>
 </head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <body>
 	<div class="container">
 		<div class="header">
-			<img src="../Assets/logo-chaordic.png" />
+			<a href="https://www.chaordic.com.br"><img src="../Assets/logo-chaordic.png" /></a>
 		</div>
 		<div class="main">
 			<div class="main-content">
 				<h1>Encurte seus links.</h1>
 				<p>Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</p>
-				<div class="encurtar">
-					<div class="input-content" id="input-content">
-						<input placeholder="Cole o seu link aqui" id="longurl"/>
-						<u class="apagar" id="apagar">X</u>
+				<div class="shorten-div">
+					<div class="input-content flex-start-content" id="input-content">
+						<input placeholder="Cole o seu link aqui" id="long-url" class="long-url"/>
+						<u class="erase" id="erase">X</u>
 					</div>
-					<button type="button" id="encurtar">ENCURTAR</button>
-					<button type="button" id="copiar" onclick="copyToClipboard(document.getElementById('longurl'))">COPIAR</button>
+					<button type="button" id="shorten-button" class="shorten-button">ENCURTAR</button>
+					<button type="button" id="copy-button" class="copy-button" onclick="copyToClipboard(document.getElementById('long-url'))">COPIAR</button>
 				</div>
 			</div>
 		</div>
 		<div class="list">
 			<h2>TOP 5</h2>
-			<div class="top5" id="top5">
-			</div>
 		</div>
 		<div class="hits">
-			<div class="triangulo"> </div>
+			<div class="triangule"> </div>
 			<div class="hits-content">
 				<h2>HITS</h2>
-				<p class="numberHits">35.713.571</p>
-				<p class="apoio">Cliques em links.</p>
+				<p class="number-hits" id="number-hits"></p>
+				<p class="support">Cliques em links.</p>
 			</div>
 		</div>
 		<footer>
 			<div class="footer">
 				<div class="footer-content">
-						<a href="https://www.chaordic.com.br">chr.dc</a>
+					<a href="https://www.chaordic.com.br" class="link">chr.dc</a>
 					<div class="icons">
-						<img src="../Assets/icon-facebook.png" />
-						<img src="../Assets/icon-twitter.png" />
+						<a href="https://www.facebook.com/chaordic.com.br"><img src="../Assets/icon-facebook.png" /></a>
+						<a href="https://twitter.com/chaordic"><img src="../Assets/icon-twitter.png" /></a>
 					</div>
 				</div>
 			</div>
