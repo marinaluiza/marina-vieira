@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/style.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/json.js"></script>
+	<script src="js/copyToClipboard.js"></script>
+	<script src="js/shortUrl.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<img src="../Assets/logo-chaordic.png" />
+		</div>
+		<div class="main">
+			<div class="main-content">
+				<h1>Encurte seus links.</h1>
+				<p>Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</p>
+				<div class="encurtar">
+					<div class="input-content" id="input-content">
+						<input placeholder="Cole o seu link aqui" id="longurl"/>
+						<u class="apagar" id="apagar">X</u>
+					</div>
+					<button type="button" id="encurtar">ENCURTAR</button>
+					<button type="button" id="copiar" onclick="copyToClipboard(document.getElementById('longurl'))">COPIAR</button>
+				</div>
+			</div>
+		</div>
+		<div class="list">
+			<h2>TOP 5</h2>
+			<div class="top5" id="top5">
+			</div>
+		</div>
+		<div class="hits">
+			<div class="triangulo"> </div>
+			<div class="hits-content">
+				<h2>HITS</h2>
+				<p class="numberHits">35.713.571</p>
+				<p class="apoio">Cliques em links.</p>
+			</div>
+		</div>
+		<footer>
+			<div class="footer">
+				<div class="footer-content">
+						<a href="https://www.chaordic.com.br">chr.dc</a>
+					<div class="icons">
+						<img src="../Assets/icon-facebook.png" />
+						<img src="../Assets/icon-twitter.png" />
+					</div>
+				</div>
+			</div>
+		</footer>	
+
+
+	</div>
+</body>
